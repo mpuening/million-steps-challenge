@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Million Steps Challenge</title>
+<style type="text/css">
+body {
+  background-color: #F5F5F5;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: red;
+}
+.datatable {
+  border: 1px solid #D6DDE6;
+  border-collapse: collapse;
+}
+.datatable caption {
+  text-align: left;
+  font: bold 110%;
+  padding-top: 1em;
+  padding-botton: 1em;
+}
+.datatable tr:hover {
+  background-color: #DFE7F2;
+  color: black;
+}
+.datatable th {
+  border: 1px solid #828282;
+  background-color: #BCBCBC;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  width: 6em;
+}
+.datatable td {
+  border: 1px solid #D6DDE6;
+  text-align: right;
+  padding: 4px;
+}
+.question {
+  color: red;
+}
+.answer {
+  font-style: italic;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="utility.js"></script>
+<script src="team-a.js"></script>
+<script>
+$(document).ready(function(){
+	createStepsTable(team_a, "#team_a_steps");
+	createStatsTable(team_a, "#team_a_stats");
+});
+</script>
+</head>
+<body>
+
+<h1>
+Million Steps Challenge #2
+</h1>
+<p>
+This is the second one million step challenge.
+</p>
+
+<hr>
+<h2>Team A</h2>
+<p>
+In progress!
+</p>
+<p>
+Team A is a team of one individual. This walker used an Omron HJ-113 pedometer clipped to the
+belt to track steps. 
+</p>
+<div id="team_a_steps"></div>
+<div id="team_a_stats"></div>
+</body>
+</html>
