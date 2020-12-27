@@ -2,6 +2,7 @@ const days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
 		"Friday", "Saturday" ];
 
 var createStepsTable = function(team, divId) {
+	var stepsAccumlated = 0;
 	var table = "<table class='datatable'>";
 	table += "<caption>" + team.name + " Steps</caption>";
 	table += "<tr>";
@@ -15,7 +16,19 @@ var createStepsTable = function(team, divId) {
 		table += "<td style='text-align: left;'>Week " + (i + 1) + "</td>";
 		$.each(days, function(j, day) {
 			var stepsPerDay = (week[day] != undefined) ? week[day] : "";
-			table += "<td>" + stepsPerDay.toLocaleString() + "</td>";
+			var stepsPerDayAsNumber = parseInt(stepsPerDay + 0);
+			var cls = "normal";
+			if (stepsPerDayAsNumber == 0) {
+				// still normal
+			}
+			else if (stepsAccumlated == 0) {
+				cls = "start";
+			}
+			else if (Math.floor((stepsAccumlated + stepsPerDayAsNumber) / 1000000) > Math.floor(stepsAccumlated / 1000000)) {
+				cls = "finish";
+			}
+			table += "<td class=\"" + cls + "\">" + stepsPerDay.toLocaleString() + "</td>";
+			stepsAccumlated += stepsPerDayAsNumber;
 		});
 		table += "</tr>";
 	});

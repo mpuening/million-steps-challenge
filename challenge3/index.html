@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Five Million Steps Challenge</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="utility.js"></script>
+<script src="team-a.js"></script>
+<script>
+$(document).ready(function(){
+	createStepsTable(team_a, "#team_a_steps");
+	createWalkingStatsTable(team_a, "#team_a_stats");
+	createRunningTable(team_a, "#team_a_running");
+	createRunningStatsTable(team_a, "#team_a_stats2");
+});
+</script>
+</head>
+<body>
+
+<h1>
+Five Million Steps Challenge #3
+</h1>
+<p>
+This is a year-long million step challenge, so the challenge is to get five million steps in one year.
+</p>
+
+<hr>
+<h2>Team A</h2>
+<p>
+Team A is a team of one individual. This walker uses an Omron HJ-321 kept safely in a pocket to track steps.
+</p>
+<div class="container">
+	<div class="float-left">
+		<div id="team_a_stats"></div>
+		<div id="team_a_steps"></div>
+	</div>
+	<div class="float-right">
+		<div id="team_a_stats2"></div>
+		<div id="team_a_running"></div>
+	</div>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+<p class="question">
+How fast do you walk?
+</p>
+<p class="answer">
+I walk on average one mile in 16:40. And with about
+2,000 steps per mile, one hour of walking yields about 7,200 steps.
+</p>
+<p class="question">
+Five Million Steps in one year?
+</p>
+<p class="answer">
+Yep. I am also mixing in some running.
+</p>
+</body>
+</html>

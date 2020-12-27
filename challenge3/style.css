@@ -1,0 +1,56 @@
+body {
+  background-color: #F5F5F5;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: red;
+}
+.float-left {
+  width: 50%; float: left;
+}
+.float-right {
+  width: 50%; float: right;
+}
+.container {
+  overflow: hidden;
+}
+.datatable {
+  border: 1px solid #D6DDE6;
+  border-collapse: collapse;
+}
+.datatable caption {
+  text-align: left;
+  font: bold 110%;
+  padding-top: 1em;
+  padding-botton: 1em;
+}
+.datatable tr:hover {
+  background-color: #DFE7F2;
+  color: black;
+}
+.datatable th {
+  border: 1px solid #828282;
+  background-color: #BCBCBC;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  width: 5em;
+}
+.datatable td {
+  border: 1px solid #D6DDE6;
+  text-align: right;
+  padding: 4px;
+}
+td.start {
+  background-color: #90EE90;
+}
+td.finish {
+  background-color: #FF4D4D;
+}
+.question {
+  color: red;
+}
+.answer {
+  font-style: italic;
+}
