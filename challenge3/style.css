@@ -32,6 +32,7 @@ h2 {
 .datatable th {
   border: 1px solid #828282;
   background-color: #BCBCBC;
+  font-size: 80%;
   font-weight: bold;
   text-align: center;
   padding: 4px;
@@ -39,6 +40,7 @@ h2 {
 }
 .datatable td {
   border: 1px solid #D6DDE6;
+  font-size: 80%;
   text-align: right;
   padding: 4px;
 }

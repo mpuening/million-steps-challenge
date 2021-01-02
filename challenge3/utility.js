@@ -121,6 +121,7 @@ var createRunningTable = function(team, divId) {
 var createRunningStatsTable = function(team, divId) {
 	var daysRan = 0;
 	var totalDistance = 0;
+	var daysRemaining = 0;
 	$.each(team.distance, function(i, week) {
 		$.each(days, function(j, day) {
 			var distancePerDay = week[day];
@@ -128,19 +129,36 @@ var createRunningStatsTable = function(team, divId) {
 			if (distancePerDay) {
 				var distancePerDayAsNumber = getDistance(team, distancePerDay);
 				totalDistance += distancePerDayAsNumber;
+				// Reset days remaining
+				daysRemaining = 0;
 			}
-
+			else {
+				daysRemaining++;
+			}
 		});
 	});
+	var distanceGoal = team.distanceGoal;
+	var remainingDistance = distanceGoal - totalDistance;
+	var daysInChallenge = team.daysInChallenge;
+	var weeklyAvg = totalDistance / (Math.max(daysInChallenge - daysRemaining, 1)) * 7;
+	var remaingWeeklyAvg = (remainingDistance > 0) ? (distanceGoal - totalDistance) / (Math.max(daysRemaining , 0.001)) * 7 : 0;
 	var table = "<table class='datatable'>";
 	table += "<caption>" + team.name + " Running Stats</caption>";
 	table += "<tr>";
 	table += "<th>Days Ran</th>";
+	table += "<th>Days Remaining</th>";
 	table += "<th>Total Distance</th>";
+	table += "<th>Remaining Distance</th>";
+	table += "<th>Weekly Avg</th>";
+	table += "<th>Remaining Wkly Avg</th>";
 	table += "</tr>";
 	table += "<tr>";
 	table += "<td>" + daysRan.toLocaleString() + "</td>";
+	table += "<td>" + daysRemaining.toLocaleString() + "</td>";
 	table += "<td>" + totalDistance.toLocaleString() + "</td>";
+	table += "<td>" + remainingDistance.toLocaleString() + "</td>";
+	table += "<td>" + weeklyAvg.toLocaleString() + "</td>";
+	table += "<td>" + remaingWeeklyAvg.toLocaleString() + "</td>";
 	table += "</tr>";
 	table += "</table>";
 	$(divId).html(table);
