@@ -18,7 +18,7 @@ const team_a = {
 		"Wednesday" : 19570,
 		"Thursday" : 16167,
 		"Friday" : 12659,
-		"Saturday" : undefined
+		"Saturday" : 25168
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -450,7 +450,7 @@ const team_a = {
 		"Friday" : "V2",
 		"Saturday" : "V2"
 	}, {
-		"Sunday" : undefined,
+		"Sunday" : "L3",
 		"Monday" : undefined,
 		"Tuesday" : undefined,
 		"Wednesday" : undefined,
