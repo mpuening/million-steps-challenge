@@ -75,12 +75,17 @@ var createWalkingStatsTable = function(team, divId) {
 	$(divId).html(table);
 };
 
-var getDistance = function(team, route) {
-	var distance = team.routes[route];
-	if (!distance) {
-		distance = parseFloat(route + 0);
-	}
-	return distance;
+var getDistance = function(team, delimitedRoutes) {
+	var routes = (delimitedRoutes + '').split('+');
+	var totalDistance = 0.0;
+	routes.forEach(function (route) {
+		var distance = team.routes[route];
+		if (!distance) {
+			distance = parseFloat(route);
+	    }
+		totalDistance += distance;
+	});
+	return totalDistance;
 };
 
 var createRunningTable = function(team, divId) {
