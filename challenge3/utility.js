@@ -85,6 +85,9 @@ var getDistance = function(team, delimitedRoutes) {
 	    }
 		totalDistance += distance;
 	});
+	if (isNaN(totalDistance)) {
+		totalDistance = 0;
+	}
 	return totalDistance;
 };
 
