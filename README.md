@@ -1,5 +1,5 @@
 Million Steps Challenge
 ==========
 
-[Click here](https://mpuening.github.io/million-steps-challenge/index.html).
+[Click here to view as website](https://mpuening.github.io/million-steps-challenge/index.html).
 
