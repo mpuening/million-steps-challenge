@@ -142,31 +142,31 @@ const team_a = {
 		"Friday" : 30279,
 		"Saturday" : 22218
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 25017,
+		"Monday" : 30050,
+		"Tuesday" : 50405,
+		"Wednesday" : 19248,
+		"Thursday" : 14724,
+		"Friday" : 12029,
+		"Saturday" : 17487
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 26317,
+		"Monday" : 20457,
+		"Tuesday" : 8184,
+		"Wednesday" : 26251,
+		"Thursday" : 19053,
+		"Friday" : 7811,
+		"Saturday" : 31663
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 4912,
+		"Monday" : 27221,
+		"Tuesday" : 24930,
+		"Wednesday" : 22046,
+		"Thursday" : 25220,
+		"Friday" : 6034,
+		"Saturday" : 34374
 	}, {
-		"Sunday" : undefined,
+		"Sunday" : 3029,
 		"Monday" : undefined,
 		"Tuesday" : undefined,
 		"Wednesday" : undefined,
@@ -432,6 +432,7 @@ const team_a = {
 		"M" : 2.0,
 		"V2" : 2.5,
 		"E3" : 3.1,
+		"F3" : 3.1,
 		"L3" : 3.1,
 		"J3" : 3.2,
 		"J4" : 4.1,
@@ -582,23 +583,23 @@ const team_a = {
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : 2.6
+	}, {
+		"Sunday" : "M",
+		"Monday" : "M",
+		"Tuesday" : undefined,
+		"Wednesday" : "F3",
+		"Thursday" : "J3",
+		"Friday" : undefined,
+		"Saturday" : "F3"
 	}, {
 		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Monday" : "F3",
+		"Tuesday" : "F3",
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : "F3",
 		"Friday" : undefined,
-		"Saturday" : undefined
-	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : 4.2
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
