@@ -4,20 +4,19 @@
 <title>Million Steps Challenge</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 <script src="utility.js"></script>
 <script src="team-a.js"></script>
 <script src="team-h.js"></script>
 <script src="team-p.js"></script>
 <script>
 $(document).ready(function(){
-	createStepsTable(team_a, "#team_a_steps");
-	createStatsTable(team_a, "#team_a_stats");
-
-	//createStepsTable(team_h, "#team_h_steps");
-	//createStatsTable(team_h, "#team_h_stats");
-
-	//createStepsTable(team_p, "#team_p_steps");
-	//createStatsTable(team_p, "#team_p_stats");
+	const teamA = new Team(team_a)
+		.applyStepsTableToDiv("#team_a_steps")
+		.applyStatsTableToDiv("#team_a_stats")
+		.applyStepsGraphToDiv("#team_a_steps_graph")
+		.applyAverageGraphToDiv("#team_a_avg_graph");
 });
 </script>
 </head>
@@ -43,8 +42,12 @@ Finished in 23 days!
 Team A is a team of one individual. This walker used an Omron HJ-113 pedometer clipped to the
 belt to track steps. 
 </p>
-<div id="team_a_steps"></div>
 <div id="team_a_stats"></div>
+<h5>Total Steps versus Goal</h5>
+<div id="team_a_steps_graph"></div>
+<h5>Remaining Daily Average</h5>
+<div id="team_a_avg_graph"></div>
+<div id="team_a_steps"></div>
 <h3>Frequently Asked Questions</h3>
 <p class="question">
 How fast do you walk?
