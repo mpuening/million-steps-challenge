@@ -1,20 +1,23 @@
-const days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
-		"Friday", "Saturday" ];
+function Team(team) {
+	this.team = team;
+	this.days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+}
 
-var createStepsTable = function(team, divId) {
+Team.prototype.applyStepsTableToDiv = function(divId) {
+	var days = this.days;
 	var stepsAccumlated = 0;
 	var table = "<table class='datatable'>";
-	table += "<caption>" + team.name + " Steps</caption>";
+	table += "<caption>" + this.team.name + " Steps</caption>";
 	table += "<tr>";
 	table += "<th></th>";
-	$.each(days, function(i, day) {
+	$.each(days, function(_, day) {
 		table += "<th>" + day + "</th>";
 	});
 	table += "</tr>";
-	$.each(team.steps, function(i, week) {
+	$.each(this.team.steps, function(w, week) {
 		table += "<tr>";
-		table += "<td style='text-align: left;'>Week " + (i + 1) + "</td>";
-		$.each(days, function(j, day) {
+		table += "<td style='text-align: left;'>Week " + (w + 1) + "</td>";
+		$.each(days, function(_, day) {
 			var stepsPerDay = (week[day] != undefined) ? week[day] : "";
 			var stepsPerDayAsNumber = parseInt(stepsPerDay + 0);
 			var cls = "normal";
@@ -34,27 +37,29 @@ var createStepsTable = function(team, divId) {
 	});
 	table += "</table>";
 	$(divId).html(table);
-};
+	return this;
+}
 
-var createStatsTable = function(team, divId) {
+Team.prototype.applyStatsTableToDiv = function(divId) {
+	var days = this.days;
 	var daysWalked = 0;
 	var totalSteps = 0;
-	var remainingSteps = team.stepsGoal;
+	var remainingSteps = this.team.stepsGoal;
 	var dailyAvg = 0;
 	var remainingAvg = 0;
-	$.each(team.steps, function(i, week) {
-		$.each(days, function(j, day) {
+	$.each(this.team.steps, function(_, week) {
+		$.each(days, function(_, day) {
 			var stepsPerDay = week[day];
 			daysWalked += (stepsPerDay != undefined) ? 1 : 0;
 			totalSteps += stepsPerDay || 0;
 		});
 	});
-	daysRemaining = team.daysInChallenge - daysWalked;
-	remainingSteps = team.stepsGoal - totalSteps;
+	var daysRemaining = this.team.daysInChallenge - daysWalked;
+	remainingSteps = this.team.stepsGoal - totalSteps;
 	dailyAvg = daysWalked ? Math.round(totalSteps / daysWalked) : 0;
-	remainingAvg = (daysWalked < team.daysInChallenge) ? Math.round((remainingSteps) / (daysRemaining)) : 0;
+	remainingAvg = (daysWalked < this.team.daysInChallenge) ? Math.round((remainingSteps) / (daysRemaining)) : 0;
 	var table = "<table class='datatable'>";
-	table += "<caption>" + team.name + " Stats</caption>";
+	table += "<caption>" + this.team.name + " Stats</caption>";
 	table += "<tr>";
 	table += "<th>Days Walked</th>";
 	table += "<th>Days Remaining</th>";
@@ -73,4 +78,96 @@ var createStatsTable = function(team, divId) {
 	table += "</tr>";
 	table += "</table>";
 	$(divId).html(table);
-};
+	return this;
+}
+
+Team.prototype.applyStepsGraphToDiv = function(divId) {
+	try {
+		// labels: day numbers
+		//var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		var labels = Array.apply(null, Array(this.team.daysInChallenge)).map(function (_, i) {return i + 1;});
+
+		//var stepGoalSeries = [...Array(this.team.daysInChallenge).keys()].map(i => this.team.stepsGoal);
+		var stepsGoal = this.team.stepsGoal;
+		var stepGoalSeries = Array.apply(null, Array(this.team.daysInChallenge)).map(function (_, _) {return stepsGoal;});
+		var stepSeries = [];
+
+		var days = this.days;
+		var totalSteps = 0;
+		$.each(this.team.steps, function(_, week) {
+			$.each(days, function(_, day) {
+				var stepsPerDay = week[day];
+				if (stepsPerDay) {
+					totalSteps += stepsPerDay || 0;
+					stepSeries.push(totalSteps);
+				}
+			});
+		});
+		
+		new Chartist.Line(divId, {
+			labels: labels,
+			series: [
+				stepGoalSeries, stepSeries 
+			]
+		}, {
+			fullWidth: false,
+			chartPadding: {
+				left: 10,
+				right: 100
+			}
+		});
+	}
+	catch (err) {
+		$(divId).html("Graphs not supported.");
+	}
+	return this;
+}
+
+Team.prototype.applyAverageGraphToDiv = function(divId) {
+	try {
+		// labels: day numbers
+		//var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		var labels = Array.apply(null, Array(this.team.daysInChallenge)).map(function (_, i) {return i + 1;});
+
+		var dailyRemainingAvg = [];
+
+		var days = this.days;
+		var stepsGoal = this.team.stepsGoal;
+		var daysInChallenge = this.team.daysInChallenge;
+		var totalSteps = 0;
+		var daysWalked = 0;
+		$.each(this.team.steps, function(_, week) {
+			$.each(days, function(_, day) {
+				var stepsPerDay = week[day];
+				daysWalked += (stepsPerDay != undefined) ? 1 : 0;
+				if (stepsPerDay) {
+					totalSteps += stepsPerDay || 0;
+					var remaining = stepsGoal - totalSteps;
+					if (remaining > 0) {
+						dailyRemainingAvg.push(remaining / (daysInChallenge - daysWalked));
+					}
+					else {
+						dailyRemainingAvg.push(0);
+					}
+				}
+			});
+		});
+		
+		new Chartist.Line(divId, {
+			labels: labels,
+			series: [
+				dailyRemainingAvg
+			]
+		}, {
+			fullWidth: false,
+			chartPadding: {
+				left: 10,
+				right: 100
+			}
+		});
+	}
+	catch (err) {
+		$(divId).html("Graphs not supported.");
+	}
+	return this;
+}
