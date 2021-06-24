@@ -4,7 +4,7 @@ function Team(team) {
 }
 
 Team.prototype.applyStepsTableToDiv = function(divId) {
-	const days = this.days;
+	var days = this.days;
 	var stepsAccumlated = 0;
 	var table = "<table class='datatable'>";
 	table += "<caption>" + this.team.name + " Steps</caption>";
@@ -41,7 +41,7 @@ Team.prototype.applyStepsTableToDiv = function(divId) {
 }
 
 Team.prototype.applyStatsTableToDiv = function(divId) {
-	const days = this.days;
+	var days = this.days;
 	var daysWalked = 0;
 	var totalSteps = 0;
 	var remainingSteps = this.team.stepsGoal;
@@ -84,12 +84,12 @@ Team.prototype.applyStatsTableToDiv = function(divId) {
 Team.prototype.applyStepsGraphToDiv = function(divId) {
 	try {
 		// labels: day numbers
-		const labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
 
-		const stepGoalSeries = [...Array(this.team.daysInChallenge).keys()].map(i => this.team.stepsGoal);
-		const stepSeries = [];
+		var stepGoalSeries = [...Array(this.team.daysInChallenge).keys()].map(i => this.team.stepsGoal);
+		var stepSeries = [];
 
-		const days = this.days;
+		var days = this.days;
 		var totalSteps = 0;
 		$.each(this.team.steps, function(w, week) {
 			$.each(days, function(d, day) {
@@ -127,9 +127,9 @@ Team.prototype.applyAverageGraphToDiv = function(divId) {
 
 		var dailyRemainingAvg = [];
 
-		const days = this.days;
-		const stepsGoal = this.team.stepsGoal;
-		const daysInChallenge = this.team.daysInChallenge;
+		var days = this.days;
+		var stepsGoal = this.team.stepsGoal;
+		var daysInChallenge = this.team.daysInChallenge;
 		var totalSteps = 0;
 		var daysWalked = 0;
 		$.each(this.team.steps, function(w, week) {
