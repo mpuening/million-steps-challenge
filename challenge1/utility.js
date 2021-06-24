@@ -10,14 +10,14 @@ Team.prototype.applyStepsTableToDiv = function(divId) {
 	table += "<caption>" + this.team.name + " Steps</caption>";
 	table += "<tr>";
 	table += "<th></th>";
-	$.each(days, function(d, day) {
+	$.each(days, function(_, day) {
 		table += "<th>" + day + "</th>";
 	});
 	table += "</tr>";
 	$.each(this.team.steps, function(w, week) {
 		table += "<tr>";
 		table += "<td style='text-align: left;'>Week " + (w + 1) + "</td>";
-		$.each(days, function(j, day) {
+		$.each(days, function(_, day) {
 			var stepsPerDay = (week[day] != undefined) ? week[day] : "";
 			var stepsPerDayAsNumber = parseInt(stepsPerDay + 0);
 			var cls = "normal";
@@ -47,8 +47,8 @@ Team.prototype.applyStatsTableToDiv = function(divId) {
 	var remainingSteps = this.team.stepsGoal;
 	var dailyAvg = 0;
 	var remainingAvg = 0;
-	$.each(this.team.steps, function(w, week) {
-		$.each(days, function(d, day) {
+	$.each(this.team.steps, function(_, week) {
+		$.each(days, function(_, day) {
 			var stepsPerDay = week[day];
 			daysWalked += (stepsPerDay != undefined) ? 1 : 0;
 			totalSteps += stepsPerDay || 0;
@@ -84,15 +84,18 @@ Team.prototype.applyStatsTableToDiv = function(divId) {
 Team.prototype.applyStepsGraphToDiv = function(divId) {
 	try {
 		// labels: day numbers
-		var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		//var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		var labels = Array.apply(null, Array(this.team.daysInChallenge)).map(function (_, i) {return i + 1;});
 
-		var stepGoalSeries = [...Array(this.team.daysInChallenge).keys()].map(i => this.team.stepsGoal);
+		//var stepGoalSeries = [...Array(this.team.daysInChallenge).keys()].map(i => this.team.stepsGoal);
+		var stepsGoal = this.team.stepsGoal;
+		var stepGoalSeries = Array.apply(null, Array(this.team.daysInChallenge)).map(function (_, _) {return stepsGoal;});
 		var stepSeries = [];
 
 		var days = this.days;
 		var totalSteps = 0;
-		$.each(this.team.steps, function(w, week) {
-			$.each(days, function(d, day) {
+		$.each(this.team.steps, function(_, week) {
+			$.each(days, function(_, day) {
 				var stepsPerDay = week[day];
 				if (stepsPerDay) {
 					totalSteps += stepsPerDay || 0;
@@ -123,7 +126,8 @@ Team.prototype.applyStepsGraphToDiv = function(divId) {
 Team.prototype.applyAverageGraphToDiv = function(divId) {
 	try {
 		// labels: day numbers
-		var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		//var labels = [...Array(this.team.daysInChallenge).keys()].map(i => i + 1);
+		var labels = Array.apply(null, Array(this.team.daysInChallenge)).map(function (_, i) {return i + 1;});
 
 		var dailyRemainingAvg = [];
 
@@ -132,8 +136,8 @@ Team.prototype.applyAverageGraphToDiv = function(divId) {
 		var daysInChallenge = this.team.daysInChallenge;
 		var totalSteps = 0;
 		var daysWalked = 0;
-		$.each(this.team.steps, function(w, week) {
-			$.each(days, function(d, day) {
+		$.each(this.team.steps, function(_, week) {
+			$.each(days, function(_, day) {
 				var stepsPerDay = week[day];
 				daysWalked += (stepsPerDay != undefined) ? 1 : 0;
 				if (stepsPerDay) {
