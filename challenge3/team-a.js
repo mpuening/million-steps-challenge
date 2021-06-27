@@ -198,21 +198,21 @@ const team_a = {
 		"Friday" : 24010,
 		"Saturday" : 27971
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 21556,
+		"Monday" : 375,
+		"Tuesday" : 23181,
+		"Wednesday" : 26705,
+		"Thursday" : 31080,
+		"Friday" : 21152,
+		"Saturday" : 28721
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 23067,
+		"Monday" : 28425,
+		"Tuesday" : 30881,
+		"Wednesday" : 48549,
+		"Thursday" : 38250,
+		"Friday" : 23230,
+		"Saturday" : 36102
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -636,19 +636,19 @@ const team_a = {
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Tuesday" : "F3",
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : "F3",
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "L6"
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Tuesday" : "E4",
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : "E4",
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "L6"
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
