@@ -4,14 +4,21 @@
 <title>Walk Across America Challenge</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 <script src="utility.js"></script>
 <script src="team-a.js"></script>
 <script>
 $(document).ready(function(){
-	createStepsTable(team_a, "#team_a_steps");
-	createWalkingStatsTable(team_a, "#team_a_stats");
-	createRunningTable(team_a, "#team_a_running");
-	createRunningStatsTable(team_a, "#team_a_stats2");
+	const teamA = new Team(team_a)
+		.applyStepsTableToDiv("#team_a_steps")
+		.applyWalkingStatsTableToDiv("#team_a_stats")
+		.applyStepsGraphToDiv("#team_a_steps_graph")
+		.applyWalkingAverageGraphToDiv("#team_a_avg_graph")
+		.applyRunningTableToDiv("#team_a_running")
+		.applyRunningStatsTableToDiv("#team_a_stats2")
+		.applyRunningGraphToDiv("#team_a_running_graph")
+		.applyRunningAverageGraphToDiv("#team_a_avg_graph2");
 });
 </script>
 </head>
@@ -38,10 +45,18 @@ Team A is a team of one individual. This walker uses an Omron HJ-321 kept safely
 <div class="container">
 	<div class="float-left">
 		<div id="team_a_stats"></div>
+		<h5>Total Steps versus Goal</h5>
+		<div id="team_a_steps_graph"></div>
+		<h5>Remaining Daily Average</h5>
+		<div id="team_a_avg_graph"></div>
 		<div id="team_a_steps"></div>
 	</div>
 	<div class="float-right">
 		<div id="team_a_stats2"></div>
+		<h5>Total Running versus Goal</h5>
+		<div id="team_a_running_graph"></div>
+		<h5>Remaining Running Average</h5>
+		<div id="team_a_avg_graph2"></div>
 		<div id="team_a_running"></div>
 	</div>
 </div>
@@ -194,6 +209,38 @@ reach my goal for the year, I need to run four times a week. And that means I wi
 goal at the end of the year. I must say I would prefer more buffer room. So that means I must either
 find time to get additional runs in once in a while, or revert to just my original goal of 500 miles.
 Time will tell.
+</p>
+<p class="question">
+How did period six go?
+</p>
+<p class="answer">
+Ah... the halfway point. Ok, technically the halfway point is still two weeks away, but since I took so long
+to add in the graphs in the manner I wanted, it is actually close to the half way point. I'm glad to report that
+I already past the halfway point on my walking stretch goal awhile ago and I continue to decrease the remaining
+step average. In fact, I am at the point where I am making some serious dents in that average. I am really having
+fun watching the average go down.
+</p>
+<p class="answer">
+On the running front, I began the period with shorter runs, but after awhile I realized that I was able to get
+back to running 4 milers. And then while out on a run, I was doing math in my head and I figured that I was able
+to get to the 300 mile mark before the end of the period. And I thought that would be a great feat to report on.
+But then silly me, I was working on the math again, and I figured that the actual 310 mile midway mark was
+also achievable. So I pushed myself and lo and behold, I made it! 500km at the end of period six. Whew! Honestly,
+I pushed myself a little bit hard, and I need to have a recovery week. But I can't forget that it now being summer,
+time is right to get extra mileage in so I am not forced to be running so much in the cold weather. So I do plan to
+put in weeks with 15+ miles in them. If I can eliminate the the need to run in the last period, I would be ecstatic.
+</p>
+<p class="answer">
+I still have not obtained my weight goal. But I have gotten to within 1kg of the goal. I think if I take a vacation
+week from work, I can put in the effort to eliminate that last little bit of weight.
+</p>
+<p class="answer">
+Lastly, I would be amiss if I didn't mention the cicadas! Yes, period six was the emergence of Brood X, the largest
+and perhaps most famous brood of cicadas. After having a delayed start due to the colder temperatures, the cicadas 
+finally came out in force. There were plenty of cicadas on the sidewalks and I made every effort to avoid squishing
+them. But I could not tell you have many times they flew into my body both front and back and even my face. I even
+had a few fly onto my shoulders and catch a ride for who knows how long before I glanced over to notice them hitching.
+But they are fun little creatures.
 </p>
 </body>
 </html>
