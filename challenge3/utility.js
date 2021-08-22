@@ -114,6 +114,7 @@ Team.prototype.applyStepsGraphToDiv = function(divId) {
 		]
 	}, {
 		fullWidth: false,
+		showPoint: false,
 		chartPadding: {
 			left: 20,
 			right: 100
@@ -159,6 +160,7 @@ Team.prototype.applyWalkingAverageGraphToDiv = function(divId) {
 		]
 	}, {
 		fullWidth: false,
+		showPoint: false,
 		chartPadding: {
 			left: 20,
 			right: 100
@@ -306,6 +308,7 @@ Team.prototype.applyRunningGraphToDiv = function(divId) {
 		]
 	}, {
 		fullWidth: false,
+		showPoint: false,
 		chartPadding: {
 			left: 0,
 			right: 100
@@ -352,6 +355,7 @@ Team.prototype.applyRunningAverageGraphToDiv = function(divId) {
 		]
 	}, {
 		fullWidth: false,
+		showPoint: false,
 		chartPadding: {
 			left: 0,
 			right: 100

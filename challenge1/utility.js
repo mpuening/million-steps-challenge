@@ -111,6 +111,7 @@ Team.prototype.applyStepsGraphToDiv = function(divId) {
 			]
 		}, {
 			fullWidth: false,
+			showPoint: false,
 			chartPadding: {
 				left: 10,
 				right: 100
@@ -160,6 +161,7 @@ Team.prototype.applyAverageGraphToDiv = function(divId) {
 			]
 		}, {
 			fullWidth: false,
+			showPoint: false,
 			chartPadding: {
 				left: 10,
 				right: 100
