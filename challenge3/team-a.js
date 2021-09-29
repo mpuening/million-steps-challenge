@@ -296,33 +296,33 @@ const team_a = {
 		"Friday" : 31142,
 		"Saturday" : 29746
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 6708,
+		"Monday" : 1785,
+		"Tuesday" : 28446,
+		"Wednesday" : 28288,
+		"Thursday" : 25308,
+		"Friday" : 25138,
+		"Saturday" : 3062
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 7235,
+		"Monday" : 15339,
+		"Tuesday" : 40019,
+		"Wednesday" : 25729,
+		"Thursday" : 26201,
+		"Friday" : 21779,
+		"Saturday" : 23601
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 8748,
+		"Monday" : 1265,
+		"Tuesday" : 24660,
+		"Wednesday" : 5476,
+		"Thursday" : 13421,
+		"Friday" : 12475,
+		"Saturday" : 24141
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Sunday" : 7212,
+		"Monday" : 34682,
+		"Tuesday" : 33478,
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
 		"Friday" : undefined,
@@ -737,32 +737,32 @@ const team_a = {
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
+		"Tuesday" : "M+F",
+		"Wednesday" : "E3",
 		"Thursday" : undefined,
-		"Friday" : undefined,
+		"Friday" : "M+F+J+M+F",
 		"Saturday" : undefined
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
+		"Tuesday" : "E4",
+		"Wednesday" : "F+J+M+O",
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : 8.7
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Tuesday" : "M+H+H",
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "M+E4+E4+J"
 	}, {
 		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
+		"Monday" : "E4",
+		"Tuesday" : "M+E4",
+		"Wednesday" : "J3",
 		"Thursday" : undefined,
 		"Friday" : undefined,
 		"Saturday" : undefined
