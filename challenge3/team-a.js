@@ -3,6 +3,7 @@ const team_a = {
 	//stepsGoal : 5616000,
 	//stepsGoal : 6300000,
 	stepsGoal : 7014000,
+	//stepsGoal : 7333331,
 	//distanceGoal : 500,
 	//distanceGoal : 621.371,
 	distanceGoal : 700,
@@ -323,10 +324,10 @@ const team_a = {
 		"Sunday" : 7212,
 		"Monday" : 34682,
 		"Tuesday" : 33478,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Wednesday" : 9106,
+		"Thursday" : 17023,
+		"Friday" : 19434,
+		"Saturday" : 33036
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -765,7 +766,7 @@ const team_a = {
 		"Wednesday" : "J3",
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "M+E4+E4+J"
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
