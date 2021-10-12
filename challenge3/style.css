@@ -56,3 +56,6 @@ td.finish {
 .answer {
   font-style: italic;
 }
+.old {
+  text-decoration: line-through;
+}
