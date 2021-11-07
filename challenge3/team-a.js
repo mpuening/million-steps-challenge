@@ -2,10 +2,11 @@ const team_a = {
 	name : "Team A",
 	//stepsGoal : 5616000,
 	//stepsGoal : 6300000,
-	stepsGoal : 7171717,
+	stepsGoal : 7300000,
 	//distanceGoal : 500,
 	//distanceGoal : 621.371,
-	distanceGoal : 717,
+	//distanceGoal : 717,
+	distanceGoal : 730,
 	daysInChallenge : 52*7,
 	steps : [ {
 		"Sunday" : 21170,
@@ -344,29 +345,29 @@ const team_a = {
 		"Friday" : 4005,
 		"Saturday" : 25671
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 10095,
+		"Monday" : 14720,
+		"Tuesday" : 34596,
+		"Wednesday" : 22059,
+		"Thursday" : 710,
+		"Friday" : 8390,
+		"Saturday" : 29533
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 2087,
+		"Monday" : 1359,
+		"Tuesday" : 24993,
+		"Wednesday" : 18336,
+		"Thursday" : 21435,
+		"Friday" : 11252,
+		"Saturday" : 21279
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 38033,
+		"Monday" : 25658,
+		"Tuesday" : 15039,
+		"Wednesday" : 31324,
+		"Thursday" : 19482,
+		"Friday" : 25221,
+		"Saturday" : 35526
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -785,27 +786,27 @@ const team_a = {
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Tuesday" : "M+F+M",
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "M+E4+E4",
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Tuesday" : "M+E4",
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : "M+F",
 		"Friday" : undefined,
 		"Saturday" : undefined
 	}, {
-		"Sunday" : undefined,
+		"Sunday" : 13.1,
 		"Monday" : undefined,
 		"Tuesday" : undefined,
-		"Wednesday" : undefined,
+		"Wednesday" : "E4",
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "M+E4"
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
