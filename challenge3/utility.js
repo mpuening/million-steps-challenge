@@ -148,7 +148,7 @@ Team.prototype.applyWalkingAverageGraphToDiv = function(divId) {
 			}
 		});
 		var remaining = stepsGoal - totalSteps;
-		if (hasDataForWeek && remaining > 0) {
+		if (hasDataForWeek && remaining >= 0) {
 			dailyRemainingAvgSeries.push(remaining / (daysInChallenge - daysWalked));
 		}
 	});
@@ -343,7 +343,7 @@ Team.prototype.applyRunningAverageGraphToDiv = function(divId) {
 		var remainingDistance = distanceGoal - totalDistance;
 		var daysRemaining = self.team.daysInChallenge - ((w+1)*7);
 		var remainingWeeklyAvg = (remainingDistance > 0) ? (distanceGoal - totalDistance) / (Math.max(daysRemaining , 0.001)) * 7 : 0;
-		if (hasDataForWeek && remainingWeeklyAvg > 0) {
+		if (hasDataForWeek && remainingWeeklyAvg >= 0) {
 			weeklyRemainingAvgSeries.push(remainingWeeklyAvg);
 		}
 	});
