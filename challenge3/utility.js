@@ -57,7 +57,7 @@ Team.prototype.applyWalkingStatsTableToDiv = function(divId) {
 	var daysRemaining = this.team.daysInChallenge - daysWalked;
 	remainingSteps = this.team.stepsGoal - totalSteps;
 	dailyAvg = daysWalked ? Math.round(totalSteps / daysWalked) : 0;
-	remainingAvg = (daysWalked < this.team.daysInChallenge) ? Math.round((remainingSteps) / (daysRemaining)) : 0;
+	remainingAvg = (daysWalked < this.team.daysInChallenge && remainingSteps > 0) ? Math.round((remainingSteps) / (daysRemaining)) : 0;
 	var table = "<table class='datatable'>";
 	table += "<caption>" + this.team.name + " Walking Stats</caption>";
 	table += "<tr>";
@@ -150,6 +150,9 @@ Team.prototype.applyWalkingAverageGraphToDiv = function(divId) {
 		var remaining = stepsGoal - totalSteps;
 		if (hasDataForWeek && remaining >= 0) {
 			dailyRemainingAvgSeries.push(remaining / (daysInChallenge - daysWalked));
+		}
+		else if (hasDataForWeek) {
+			dailyRemainingAvgSeries.push(0);
 		}
 	});
 	
