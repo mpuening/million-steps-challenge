@@ -420,10 +420,10 @@ const team_a = {
 		"Sunday" : 14883,
 		"Monday" : 15748,
 		"Tuesday" : 12104,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Wednesday" : 12147,
+		"Thursday" : 19631,
+		"Friday" : 23196,
+		"Saturday" : 9028
 	} ],
 	// ============================================================================================
 	routes : {
@@ -861,7 +861,7 @@ const team_a = {
 		"Tuesday" : "J+F+M",
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Friday" : "J+F+M",
+		"Saturday" : "O"
 	}]
 };
