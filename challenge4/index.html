@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Have Fun Challenge</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="utility.js"></script>
+<script src="team-a.js"></script>
+<script>
+$(document).ready(function(){
+	const teamA = new Team(team_a)
+		.applyStepsTableToDiv("#team_a_steps")
+		.applyWalkingStatsTableToDiv("#team_a_stats")
+		.applyStepsGraphToDiv("#team_a_steps_graph")
+		.applyWalkingAverageGraphToDiv("#team_a_avg_graph")
+		.applyRunningTableToDiv("#team_a_running")
+		.applyRunningStatsTableToDiv("#team_a_stats2")
+		.applyRunningGraphToDiv("#team_a_running_graph")
+		.applyRunningAverageGraphToDiv("#team_a_avg_graph2");
+});
+</script>
+</head>
+<body>
+
+<h1>
+Have Fun - Challenge #4
+</h1>
+<p>
+This challenge is the "have fun" challenge.
+</p>
+<p>
+I decided to not have a well defined challenge in terms of steps or running distance. But to have a graph to display, the walking
+goal will begin at 200,000 steps walking and 50 miles of running per period. Have fun.
+</p>
+
+<hr>
+<h2>Team A</h2>
+<p>
+Team A is a team of one individual. This walker uses an Omron HJ-321 kept safely in a pocket to track steps.
+</p>
+<div class="container">
+	<div class="float-left">
+		<div id="team_a_stats"></div>
+		<h5>Total Steps versus Goal</h5>
+		<div id="team_a_steps_graph"></div>
+		<h5>Remaining Daily Average</h5>
+		<div id="team_a_avg_graph"></div>
+		<div id="team_a_steps"></div>
+	</div>
+	<div class="float-right">
+		<div id="team_a_stats2"></div>
+		<h5>Total Running versus Goal</h5>
+		<div id="team_a_running_graph"></div>
+		<h5>Remaining Running Average</h5>
+		<div id="team_a_avg_graph2"></div>
+		<div id="team_a_running"></div>
+	</div>
+</div>
+
+<h3>Frequently Asked Questions</h3>
+<p class="question">
+How did period one go?
+</p>
+<p class="answer">
+</p>
+</body>
+</html>
