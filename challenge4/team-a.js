@@ -1,8 +1,8 @@
 const team_a = {
 	name : "Team A",
-	stepsGoal : 200000,
-	distanceGoal : 50,
-	daysInChallenge : 4*7,
+	stepsGoal : 486036,
+	distanceGoal : 200,
+	daysInChallenge : 8*7,
 	steps : [{
 		"Sunday" : 5719,
 		"Monday" : 8862,
@@ -34,7 +34,39 @@ const team_a = {
 		"Wednesday" : 12251,
 		"Thursday" : 11611,
 		"Friday" : 4048,
-		"Saturday" : 25000
+		"Saturday" : 24840
+	}, {
+		"Sunday" : 3546,
+		"Monday" : 13760,
+		"Tuesday" : 14749,
+		"Wednesday" : 2122,
+		"Thursday" : 3612,
+		"Friday" : 3599,
+		"Saturday" : 19877
+	}, {
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	}, {
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	}, {
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	}],
 	// ============================================================================================
 	routes : {
@@ -91,5 +123,37 @@ const team_a = {
 		"Thursday" : "F+M",
 		"Friday" : undefined,
 		"Saturday" : "9"
+	}, {
+		"Sunday" : undefined,
+		"Monday" : "F+J+M",
+		"Tuesday" : "F+J3+M",
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : 11
+	}, {
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	}, {
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	}, {
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	}]
 };
