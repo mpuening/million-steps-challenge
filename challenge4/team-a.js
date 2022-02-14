@@ -44,13 +44,13 @@ const team_a = {
 		"Friday" : 3599,
 		"Saturday" : 19877
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 7799,
+		"Monday" : 13529,
+		"Tuesday" : 10162,
+		"Wednesday" : 10485,
+		"Thursday" : 12679,
+		"Friday" : 6954,
+		"Saturday" : 20214
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -133,12 +133,12 @@ const team_a = {
 		"Saturday" : 11
 	}, {
 		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Monday" : 6.2,
+		"Tuesday" : 4,
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : 6,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : 12
 	}, {
 		"Sunday" : undefined,
 		"Monday" : undefined,
