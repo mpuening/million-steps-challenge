@@ -60,13 +60,13 @@ const team_a = {
 		"Friday" : 6816,
 		"Saturday" : 23559
 	}, {
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 2210,
+		"Monday" : 12465,
+		"Tuesday" : 9201,
+		"Wednesday" : 14613,
+		"Thursday" : 3071,
+		"Friday" : 7368,
+		"Saturday" : 24274
 	}],
 	// ============================================================================================
 	routes : {
@@ -149,11 +149,11 @@ const team_a = {
 		"Saturday" : 13
 	}, {
 		"Sunday" : undefined,
-		"Monday" : undefined,
+		"Monday" : "E6",
 		"Tuesday" : undefined,
-		"Wednesday" : undefined,
+		"Wednesday" : "F+M+H",
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "F+E6+E6"
 	}]
 };
