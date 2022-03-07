@@ -1,8 +1,8 @@
 const team_a = {
 	name : "Team A",
-	stepsGoal : 486036,
-	distanceGoal : 200,
-	daysInChallenge : 8*7,
+	stepsGoal : 777877,
+	distanceGoal : 300,
+	daysInChallenge : 12*7,
 	steps : [{
 		"Sunday" : 5719,
 		"Monday" : 8862,
@@ -67,6 +67,38 @@ const team_a = {
 		"Thursday" : 3071,
 		"Friday" : 7368,
 		"Saturday" : 24274
+	},{
+		"Sunday" : 8121,
+		"Monday" : 13374,
+		"Tuesday" : 8109,
+		"Wednesday" : 15235,
+		"Thursday" : 10189,
+		"Friday" : 8053,
+		"Saturday" : 27967
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	}],
 	// ============================================================================================
 	routes : {
@@ -155,5 +187,37 @@ const team_a = {
 		"Thursday" : undefined,
 		"Friday" : undefined,
 		"Saturday" : "F+E6+E6"
+	},{
+		"Sunday" : undefined,
+		"Monday" : "E6",
+		"Tuesday" : undefined,
+		"Wednesday" : "E6",
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : "F+E6+E6"
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	}]
 };
