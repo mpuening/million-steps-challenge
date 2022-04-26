@@ -1,8 +1,8 @@
 const team_a = {
 	name : "Team A",
-	stepsGoal : 1022837,
+	stepsGoal : 1303139,
 	distanceGoal : 300,
-	daysInChallenge : 16*7,
+	daysInChallenge : 20*7,
 	steps : [{
 		"Sunday" : 5719,
 		"Monday" : 8862,
@@ -123,6 +123,38 @@ const team_a = {
 		"Thursday" : 8456,
 		"Friday" : 13400,
 		"Saturday" : 23719
+	},{
+		"Sunday" : 6017,
+		"Monday" : 3216,
+		"Tuesday" : 13578,
+		"Wednesday" : 9569,
+		"Thursday" : 8898,
+		"Friday" : 14546,
+		"Saturday" : 19958
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -275,6 +307,38 @@ const team_a = {
 		"Thursday" : 4,
 		"Friday" : undefined,
 		"Saturday" : "J+M"
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : "E6",
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
