@@ -132,37 +132,37 @@ const team_a = {
 		"Friday" : 14546,
 		"Saturday" : 19958
 	},{
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 14106,
+		"Monday" : 11376,
+		"Tuesday" : 4208,
+		"Wednesday" : 12777,
+		"Thursday" : 3071,
+		"Friday" : 4514,
+		"Saturday" : 7655
 	},{
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 12624,
+		"Monday" : 7884,
+		"Tuesday" : 8769,
+		"Wednesday" : 10726,
+		"Thursday" : 4592,
+		"Friday" : 6967,
+		"Saturday" : 8087
 	},{
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 14228,
+		"Monday" : 20308,
+		"Tuesday" : 20308,
+		"Wednesday" : 16011,
+		"Thursday" : 16768,
+		"Friday" : 6502,
+		"Saturday" : 18553
 	},{
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 15603,
+		"Monday" : 10896,
+		"Tuesday" : 19567,
+		"Wednesday" : 7265,
+		"Thursday" : 11712,
+		"Friday" : 5813,
+		"Saturday" : 3979
 	}],
 	// ============================================================================================
 	routes : {
@@ -322,29 +322,29 @@ const team_a = {
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : 0.2
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
 		"Tuesday" : undefined,
+		"Wednesday" : 2.5,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : 3.1
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : 4,
 		"Wednesday" : undefined,
 		"Thursday" : undefined,
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : 3.1
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
 		"Tuesday" : undefined,
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
-	},{
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : 3.1,
 		"Friday" : undefined,
 		"Saturday" : undefined
 	}]
