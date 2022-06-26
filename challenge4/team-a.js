@@ -1,8 +1,8 @@
 const team_a = {
 	name : "Team A",
-	stepsGoal : 1303139,
-	distanceGoal : 300,
-	daysInChallenge : 20*7,
+	stepsGoal : 1608008,
+	distanceGoal : 350,
+	daysInChallenge : 24*7,
 	steps : [{
 		"Sunday" : 5719,
 		"Monday" : 8862,
@@ -163,6 +163,38 @@ const team_a = {
 		"Thursday" : 11712,
 		"Friday" : 5813,
 		"Saturday" : 3979
+	},{
+		"Sunday" : 4164,
+		"Monday" : 	13347,
+		"Tuesday" : 18532,
+		"Wednesday" : 2886,
+		"Thursday" : 2042,
+		"Friday" : 2668,
+		"Saturday" : 21528
+	},{
+		"Sunday" : 10204,
+		"Monday" : 13496,
+		"Tuesday" : 19720,
+		"Wednesday" : 15760,
+		"Thursday" : 11651,
+		"Friday" : 6970,
+		"Saturday" : 15579
+	},{
+		"Sunday" : 2195,
+		"Monday" : 12227,
+		"Tuesday" : 9999,
+		"Wednesday" : 17622,
+		"Thursday" : 16280,
+		"Friday" : 10636,
+		"Saturday" : 13206
+	},{
+		"Sunday" : 13325,
+		"Monday" : 8818,
+		"Tuesday" : 19003,
+		"Wednesday" : 11601,
+		"Thursday" : 8272,
+		"Friday" : 20253,
+		"Saturday" : 19110
 	}],
 	// ============================================================================================
 	routes : {
@@ -347,5 +379,37 @@ const team_a = {
 		"Thursday" : 3.1,
 		"Friday" : undefined,
 		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : 4,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : 4
+	},{
+		"Sunday" : undefined,
+		"Monday" : 4,
+		"Tuesday" : undefined,
+		"Wednesday" : 3.1,
+		"Thursday" : 3.1,
+		"Friday" : undefined,
+		"Saturday" : 4
+	},{
+		"Sunday" : undefined,
+		"Monday" : 4,
+		"Tuesday" : undefined,
+		"Wednesday" : 4,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : "E6",
+		"Monday" : undefined,
+		"Tuesday" : 4,
+		"Wednesday" : undefined,
+		"Thursday" : 4,
+		"Friday" : undefined,
+		"Saturday" : "E6"
 	}]
 };
