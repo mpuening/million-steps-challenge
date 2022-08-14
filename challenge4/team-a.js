@@ -1,8 +1,8 @@
 const team_a = {
 	name : "Team A",
-	stepsGoal : 1949102,
-	distanceGoal : 400,
-	daysInChallenge : 28*7,
+	stepsGoal : 3640000,
+	distanceGoal : 700,
+	daysInChallenge : 52*7,
 	steps : [{
 		"Sunday" : 5719,
 		"Monday" : 8862,
@@ -227,6 +227,198 @@ const team_a = {
 		"Thursday" : 30933,
 		"Friday" : 5439,
 		"Saturday" : 12927
+	},{
+		"Sunday" : 3208,
+		"Monday" : 14130,
+		"Tuesday" : 16023,
+		"Wednesday" : 10888,
+		"Thursday" : 15153,
+		"Friday" : 5751,
+		"Saturday" : 15386
+	},{
+		"Sunday" : 13747,
+		"Monday" : 14826,
+		"Tuesday" : 2911,
+		"Wednesday" : 17172,
+		"Thursday" : 19731,
+		"Friday" : 25137,
+		"Saturday" : 22861
+	},{
+		"Sunday" : 1964,
+		"Monday" : 1935,
+		"Tuesday" : 25656,
+		"Wednesday" : 12777,
+		"Thursday" : 16399,
+		"Friday" : 5323,
+		"Saturday" : 2164
+	},{
+		"Sunday" : 1227,
+		"Monday" : 11265,
+		"Tuesday" : 13233,
+		"Wednesday" : 13826,
+		"Thursday" : 9852,
+		"Friday" : 13064,
+		"Saturday" : 20469
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	}],
 	// ============================================================================================
 	routes : {
@@ -475,5 +667,197 @@ const team_a = {
 		"Thursday" : "M+J+F",
 		"Friday" : undefined,
 		"Saturday" : "L6"
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : "M+J",
+		"Wednesday" : undefined,
+		"Thursday" : "M+J",
+		"Friday" : undefined,
+		"Saturday" : "L6"
+	},{
+		"Sunday" : undefined,
+		"Monday" : "M+J",
+		"Tuesday" : undefined,
+		"Wednesday" : "J+F",
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : "L6+3.1"
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : "M+J",
+		"Wednesday" : undefined,
+		"Thursday" : "M+F",
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : "L6",
+		"Tuesday" : "L6",
+		"Wednesday" : "M+J",
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : "L6"
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
+	},{
+		"Sunday" : undefined,
+		"Monday" : undefined,
+		"Tuesday" : undefined,
+		"Wednesday" : undefined,
+		"Thursday" : undefined,
+		"Friday" : undefined,
+		"Saturday" : undefined
 	}]
 };
