@@ -324,13 +324,13 @@ const team_a = {
 		"Friday" : 13359,
 		"Saturday" : 19788
 	},{
-		"Sunday" : undefined,
-		"Monday" : undefined,
-		"Tuesday" : undefined,
-		"Wednesday" : undefined,
-		"Thursday" : undefined,
-		"Friday" : undefined,
-		"Saturday" : undefined
+		"Sunday" : 2918,
+		"Monday" : 19373,
+		"Tuesday" : 23739,
+		"Wednesday" : 15894,
+		"Thursday" : 22621,
+		"Friday" : 13439,
+		"Saturday" : 17467
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
@@ -443,6 +443,7 @@ const team_a = {
 		"L6" : 6.4,
 		"J7" : 7.2,
 		"O8" : 8.2,
+		"O6" : 6.3,
 		"B6" : 6.6
 	},
 	distance : [{
@@ -768,11 +769,11 @@ const team_a = {
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
-		"Tuesday" : undefined,
+		"Tuesday" : "M+F",
 		"Wednesday" : undefined,
-		"Thursday" : undefined,
+		"Thursday" : "M+F",
 		"Friday" : undefined,
-		"Saturday" : undefined
+		"Saturday" : "O6"
 	},{
 		"Sunday" : undefined,
 		"Monday" : undefined,
